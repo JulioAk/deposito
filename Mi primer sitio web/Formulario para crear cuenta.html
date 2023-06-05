@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+
+    <!-- Estilo CSS -->
+<style>
+    label {
+        display: block;
+    }
+
+    div{
+        margin-bottom: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+    <h2>Crear su cuenta</h2>
+
+    <!-- Para hacer formularios escritos -->
+    <form id="formCreateAccount" action="confimacion de envio de datos.html" method="post">
+    <div>
+        <!-- Entrada "nombre" -->
+        <label for="txtnombre">Nombres:</label>
+        <input type="text" name="nombre" id="txtnombre" maxlength="60" required>
+    </div>    
+    <div>
+        <!-- entrada 'apellido' -->
+        <label for="Txt apellido">Apellidos:</label>
+        <input type="text" name="apellido" id="Txt apellido" maxlength="60" required>
+    </div>
+    <div>
+        <!-- entrada"DNI" -->
+        <label for="intDNI">DNI:</label>
+        <input type="tel" name="DNI" id="intDNI" maxlength="8" required>
+    </div>
+    <div>
+        <!-- Entrada "email" -->
+        <label for="txtemail">Email:</label>
+        <input type="email" name="Correo electronico" id="txtemail" maxlength="99" required>
+    </div> 
+    <div>
+        <!-- entrada "telefono" -->
+        <label for="intTelefono">Telefono/celular:</label>
+        <input type="tel" name="Telf" id="intTelefono" maxlength="20" required>
+    </div>
+    <div>
+        <!-- entrada "direccion" -->
+        <label for="txtdireccion">Direccion:</label>
+        <input type="text" name="direccion" id="txtdireccion" maxlength="50" required><br>
+        <input type="text" name="direccion2" id="txtdireccion2" maxlength="50">      
+    </div>
+    <div>
+        <!-- entrada "categoria de interes" -->
+        <label for="txtintrs">Categoria de Interes</label>
+        <input type="text" name="interst" id="txtintrs" maxlength="90">
+    </div>
+    <div>
+        <!-- entrada" fecha de nacimiento -->
+        <label for="fchNacm">Fecha de Nacimiento:</label>
+        <input type="date" name="FchNacm" id="fchNacm" required>
+    </div>
+    <div>
+        <!-- Entrada "sexo M y F" -->
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" id="bolmasculino" value="M">
+        <label for="bolmasculino" style="display: inline;">Masculino</label>
+        <input type="radio" name="sexo" id="bolfemenino" value="F">
+        <label for="bolfemenino" style="display: inline;">Femenino</label>
+    </div>
+    <div>
+        <!-- Entrada " usuario" -->
+        <label for="txtusuario">Usuario:</label>
+        <input type="text" name="User" id="txtusuario" maxlength="25" required>
+    </div>
+    <div>
+        <!-- entrada "contraseña" -->
+        <label for="psscontra">Contraseña:</label>
+        <input type="password" name="past" id="psscontra" maxlength="30" required>
+    </div>
+    <div>
+        <!-- Entrada"enviar" -->
+        <button type="submit">enviar</button>
+    </div>
+
+
+    </form>
+    
+</body>
+</html>
